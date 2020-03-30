@@ -11,9 +11,12 @@ import "react-toastify/dist/ReactToastify.css";
 
 function App() {
   return (
-    <div className="container-fluid">
-      <Header />
-      <Switch>
+    <div>
+      <header>  
+        <Header />
+      </header>
+      <main>      
+        <Switch>
         <Route exact path="/" component={HomePage} />
         <Route path="/about" component={AboutPage} />
         <Route path="/courses" component={CoursesPage} />
@@ -22,6 +25,8 @@ function App() {
         <Route component={PageNotFound} />
       </Switch>
       <ToastContainer autoClose={3000} hideProgressBar />
+      </main>
+      <footer></footer>
     </div>
   );
 }
