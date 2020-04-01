@@ -1,43 +1,44 @@
-import React, { useEffect } from "react";
+import React, { useEffect} from "react";
 import M from "materialize-css";
 import "materialize-css/dist/css/materialize.min.css";
 import { NavLink } from "react-router-dom";
 
-function Sidenav() {
+function SideBar() {
   useEffect(() => {
-
-    //let instance = M.Sidenav.getInstance(Sidenav);
-    //instance.open();
-    //console.log(instance.isOpen);
+    let elem = document.querySelector(".sidenav");
+    M.Sidenav.init(elem, {
+      edge: "left",
+      inDuration: 300
+    });
   });
 
-    
+  function CloseNav(){
+    let elem = document.querySelector(".sidenav");
+    M.Sidenav.init(elem, {
+      edge: "left"
+    });
+  }
+
+  
 
   return (
-
-    <div>
-      <ul
-        ref={Sidenav => {
-          M.Sidenav = Sidenav;
-        }}
-        id="slide-out"
-        className="sidenav"
-      >
-        <li>
-          <NavLink to="/">Home</NavLink>
-        </li>
-        <li>
-          <NavLink to="/courses">DataBase</NavLink>
-        </li>
-        <li>
-          <NavLink to="/about">About</NavLink>
-        </li>
+    <React.Fragment>
+      <ul id="slide-out" className="sidenav">
+      <li>
+              <NavLink to="/" onClick={CloseNav}>Home</NavLink>
+            </li>
+            <li>
+              <NavLink to="/courses" onClick={CloseNav}>DataBase</NavLink>
+            </li>
+            <li>
+              <NavLink to="/about" onClick={CloseNav}>About</NavLink>
+            </li>
       </ul>
-      <a href="#!" data-target="slide-out" className="sidenav-trigger">
+      <a href="#" data-target="slide-out" className="sidenav-trigger">
         <i className="material-icons">menu</i>
       </a>
-    </div>
-);
+    </React.Fragment>
+  );
 }
 
-export default Sidenav;
+export default SideBar;

@@ -9,12 +9,12 @@ const Header = () => {
     <>
       <nav>
         <div className="nav-wrapper">
-          <a href="#!" className="brand-logo center">
-            QRDB
-          </a>
           <div className="container">
             <Sidenav />
           </div>
+          <a href="#!" className="brand-logo center">
+            QRDB
+          </a>
           <ul className="right hide-on-med-and-down">
             <li>
               <NavLink to="/">Home</NavLink>
@@ -28,7 +28,6 @@ const Header = () => {
           </ul>
         </div>
       </nav>
-
     </>
   );
 };
