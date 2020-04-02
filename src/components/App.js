@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useEffect} from "react";
 import { Route, Switch } from "react-router-dom";
 import HomePage from "./home/HomePage";
 import AboutPage from "./about/AboutPage";
@@ -8,8 +8,15 @@ import CoursesPage from "./courses/CoursesPage";
 import ManageCoursePage from "./courses/ManageCoursePage"; // eslint-disable-line import/no-named-as-default
 import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
+import M from "materialize-css";
+
+
 
 function App() {
+  useEffect(() => {
+  M.AutoInit()
+  }, [])
+
   return (
     <div>
       <header>  
