@@ -2,10 +2,7 @@ import React from "react";
 import { NavLink } from "react-router-dom";
 import "materialize-css/dist/css/materialize.min.css";
 import Sidenav from "./sidebar";
-<<<<<<< HEAD
-=======
 import "../../styles/scss/Header.scss";
->>>>>>> develop
 
 const Header = () => {
   const activeStyle = { color: "#F15B2A" };

@@ -26,10 +26,7 @@
     "gulp-sourcemaps": "^2.6.5",
     "immer": "2.1.3",
     "materialize-css": "^1.0.0-rc.2",
-<<<<<<< HEAD
-=======
     "node-sass": "^4.13.1",
->>>>>>> develop
     "prop-types": "15.7.2",
     "react": "16.8.4",
     "react-dom": "16.8.4",
