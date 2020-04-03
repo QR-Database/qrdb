@@ -5,7 +5,12 @@ import App from "./components/App";
 import "./index.css";
 import configureStore from "./redux/configureStore";
 import { Provider as ReduxProvider } from "react-redux";
+<<<<<<< HEAD
 import 'materialize-css';
+=======
+import 'materialize-css/dist/css/materialize.min.css'
+
+>>>>>>> 93d7d98bc8a741ba702e444b7de3ed10b23aaf2f
 
 const store = configureStore();
 

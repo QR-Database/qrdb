@@ -8,7 +8,8 @@ function SideBar() {
     let elem = document.querySelector(".sidenav");
     M.Sidenav.init(elem, {
       edge: "left",
-      inDuration: 300
+      inDuration: 300,
+      outDuration: 300
     });
   });
 
