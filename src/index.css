@@ -1,8 +1,26 @@
 #app {
-  max-width: 850px;
-  margin: 0 auto;
+  max-width: 100%;
+  max-height: 100%;
+}
+a{
+  color: #273043;
+  -webkit-transition: color .28s ease, background-color .28s ease;
+  transition: color .28s ease, background-color .28s ease;
+}
+.nav-wrapper{
+  padding-top: 10px;
+  background-color: #273043;  
+  padding-bottom: 75px;
+}
+.tabs .tab a:hover, .tabs .tab a.active {
+  background-color: transparent;
+  color: #273043;
+}
+nav .brand-logo {
+  font-size: 60px;
+}
+nav i, nav, nav i.material-icons {
+  display: block;
+  font-size: 60px;
 }
 
-nav {
-  padding: 20px 0 20px 0;
-}
