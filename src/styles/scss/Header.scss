@@ -1,0 +1,23 @@
+@import "./Variables.scss";
+
+a{
+    color: $primaryColor;
+    -webkit-transition: color .28s ease, background-color .28s ease;
+    transition: color .28s ease, background-color .28s ease;
+  }
+  .nav-wrapper{
+    padding-top: 10px;
+    background-color: $primaryColor;  
+    padding-bottom: 75px;
+  }
+  .tabs .tab a:hover, .tabs .tab a.active {
+    background-color: transparent;
+    color: $primaryColor
+  }
+  nav .brand-logo {
+    font-size: 60px;
+  }
+  nav i, nav, nav i.material-icons {
+    display: block;
+    font-size: 60px;
+  }
