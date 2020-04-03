@@ -32,3 +32,9 @@ nav i, nav, nav i.material-icons {
   line-height: 48px;
   padding: 32px;
 }
+.sidenav li>a:hover {
+  background-color: white;
+}
+.row .col {
+  padding: 0;
+}
