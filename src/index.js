@@ -7,8 +7,6 @@ import configureStore from "./redux/configureStore";
 import { Provider as ReduxProvider } from "react-redux";
 import 'materialize-css';
 
-
-
 const store = configureStore();
 
 render(
