@@ -3,7 +3,7 @@ import M from "materialize-css";
 
 
 
-function AboutPage(){
+function DualPage(){
 
   useEffect(() => {
     M.AutoInit()
@@ -37,4 +37,4 @@ return(
 )
 }
 
-export default AboutPage;
+export default DualPage;

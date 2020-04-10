@@ -1,6 +1,7 @@
 @import "./Variables.scss";
 
 a{
+  font-size: 60px;
     color: $primaryColor;
     -webkit-transition: color .28s ease, background-color .28s ease;
     transition: color .28s ease, background-color .28s ease;
@@ -21,3 +22,11 @@ a{
     display: block;
     font-size: 60px;
   }
+  .tabs .tab a {
+    color: rgba(238,110,115,0.7);
+    display: block;
+    padding: 0 24px;
+    font-size: 60px; 
+    -webkit-transition: color .28s ease, background-color .28s ease;
+    transition: color .28s ease, background-color .28s ease;
+}

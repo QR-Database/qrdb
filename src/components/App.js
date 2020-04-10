@@ -1,7 +1,7 @@
 import React, {useEffect} from "react";
 import { Route, Switch } from "react-router-dom";
 import HomePage from "./home/HomePage";
-import AboutPage from "./about/AboutPage";
+import DualPage from "./Dual/DualPage";
 import Header from "./common/Header";
 import PageNotFound from "./PageNotFound";
 import CoursesPage from "./courses/CoursesPage";
@@ -9,8 +9,7 @@ import ManageCoursePage from "./courses/ManageCoursePage"; // eslint-disable-lin
 import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import M from "materialize-css";
-
-
+import "../styles/Index.scss";
 
 function App() {
   useEffect(() => {
@@ -25,7 +24,7 @@ function App() {
       <main>      
         <Switch>
         <Route exact path="/" component={HomePage} />
-        <Route path="/about" component={AboutPage} />
+        <Route path="/dual" component={DualPage} />
         <Route path="/courses" component={CoursesPage} />
         <Route path="/course/:slug" component={ManageCoursePage} />
         <Route path="/course" component={ManageCoursePage} />
