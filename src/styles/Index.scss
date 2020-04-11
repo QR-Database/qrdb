@@ -36,6 +36,8 @@
   .sidenav li>a:hover {
     background-color: white;
   }
+//This is where the nav stops
+
   .row .col {
     padding: 0;
   }
@@ -46,3 +48,67 @@ td{
   border-style: solid;
   border-color: #273043;
 }
+.col .row {
+   margin-left: 0rem; 
+   margin-right: 0rem; 
+}
+.row .col.s3 {
+  text-align: center;
+  max-width: 100%;
+  width: 33%;
+  font-size: 30px;
+  margin-left: auto;
+  left: auto;
+  right: auto;
+  background-color: white;
+}
+.s12CreateQR{
+  border-style: solid; 
+  border-left: none;
+  border-right: none; 
+  text-align: center;
+  max-width: 100%;
+  font-size: 30px;
+}
+.boarder{
+  border-style: solid; 
+}
+img{
+  margin-left: 43%;
+  max-width: 40%;
+}
+textarea.materialize-textarea {
+  max-height: 10px;
+  line-height: normal;
+  overflow-y: hidden;
+  padding: 1.3rem 0 .8rem 0;
+  resize: none;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.row .col.s6 {
+  width: 49%;
+  margin-left: auto;
+  left: 0;
+  right: 0;
+}
+.left{
+  margin-right: 5px;
+}
+.right{
+  margin-left: 5px;
+}
+.smaller{
+  max-width: 51%;
+  padding-bottom: 5px;
+}
+.container{
+  justify-content: space-around; 
+}
+
+
+
+
+
+
+//This is where QR code create ends
