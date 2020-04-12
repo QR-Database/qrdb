@@ -13,12 +13,12 @@ function SideBar() {
     });
   });
 
-  function CloseNav(){
+   function CloseNav(){
     let elem = document.querySelector(".sidenav");
     M.Sidenav.init(elem, {
-      edge: "left"
+      edge: "left" 
     });
-  }
+  } 
 
   
 
