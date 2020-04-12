@@ -136,14 +136,13 @@ textarea.materialize-textarea:focus:not([readonly]) + label {
 @media screen and (min-width: 1024px) {
   $largerFontSize: 3vw;
   $mainFontSize: 2vw;
-  $smallerFontSize: 1vw;
+  $smallerFontSize: 2vw;
 
   .btn {
-    font-size: $smallerFontSize;
+    font-size: $mainFontSize;
   }
   .tabs .tab a {
   font-size: $largerFontSize;
+  }
 }
-}
-
 //This is where QR code create ends
