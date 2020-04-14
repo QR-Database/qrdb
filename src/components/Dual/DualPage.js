@@ -7,7 +7,7 @@ function DualPage() {
   }, []);
 
   return (
-    <div className="Padding">
+<>
       <div className="row">
         <div className="col s12">
           <ul className="tabs">
@@ -22,7 +22,7 @@ function DualPage() {
           </ul>
         </div>
       </div>
-          {/* This is the left most tab page */}
+      {/* This is the left most tab page */}
       <div id="test1" className="col s12">
         <div className="flexContainer">
           <img src="src\styles\scss\img\QR IMG.png" alt="QR"></img>
@@ -46,17 +46,14 @@ function DualPage() {
           </div>
 
           <div className="row">
-            <form className="col s12">
-              <div className="row">
-                <div className="input-field col s12">
-                  <textarea
-                    id="textarea1"
-                    className="materialize-textarea"
-                  ></textarea>
-                  <label>Enter Text</label>
-                </div>
-              </div>
-            </form>
+            <div className="input-field col s12">
+              <i className="material-icons prefix">mode_edit</i>
+              <textarea
+                id="icon_prefix2"
+                className="materialize-textarea"
+              ></textarea>
+              <label htmlFor="icon_prefix2">First Name</label>
+            </div>
           </div>
           <div className="flexContainer">
             <button className="d-flex col btn waves-effect waves-light">
@@ -73,60 +70,60 @@ function DualPage() {
           </div>
         </div>
       </div>
-              {/* This is the right most tab page */}
+      {/* This is the right most tab page */}
       <div id="test2" className="col s12">
-      <div id="test1" className="col s12">
-        <div className="flexContainer">
-          <img src="src\styles\scss\img\QR IMG.png" alt="QR"></img>
-        </div>
-        <div className="container boarder">
-          <div className="row">
-            {/*       First row */}
-            <p className="col s3">Unlocked</p>
-            <p className="col s3">Url</p>
-            <p className="col s3">Unlocked</p>
-            {/*       Second row */}
-            <p className="col s3">Unlocked</p>
-            <p className="col s3">Vcard</p>
-            <p className="col s3">Unlocked</p>
-            {/*       Third row */}
-            <p className="col s3">Unlocked</p>
-            <p className="col s3">Vcard</p>
-            <p className="col s3">Unlocked</p>
-
-            <p className="col s12 s12CreateQR">Create your new QR code here!</p>
+        <div id="test1" className="col s12">
+          <div className="flexContainer">
+            <img src="src\styles\scss\img\QR IMG.png" alt="QR"></img>
           </div>
+          <div className="container boarder">
+            <div className="row">
+              {/*       First row */}
+              <p className="col s3">Unlocked</p>
+              <p className="col s3">Url</p>
+              <p className="col s3">Unlocked</p>
+              {/*       Second row */}
+              <p className="col s3">Unlocked</p>
+              <p className="col s3">Vcard</p>
+              <p className="col s3">Unlocked</p>
+              {/*       Third row */}
+              <p className="col s3">Unlocked</p>
+              <p className="col s3">Vcard</p>
+              <p className="col s3">Unlocked</p>
 
-          <div className="row">
-            <form className="col s12">
-              <div className="row">
-                <div className="input-field col s12">
-                  <textarea
-                    id="textarea1"
-                    className="materialize-textarea"
-                  ></textarea>
-                  <label>Enter Text</label>
-                </div>
+              <p className="col s12 s12CreateQR">
+                Create your new QR code here!
+              </p>
+            </div>
+
+            <div className="row">
+              <div className="input-field col s12">
+                <i className="material-icons prefix">mode_edit</i>
+                <textarea
+                  id="icon_prefix2"
+                  className="materialize-textarea"
+                ></textarea>
+                <label htmlFor="icon_prefix2">First Name</label>
               </div>
-            </form>
-          </div>
-          <div className="flexContainer">
-          <button className="d-flex col btn waves-effect waves-light">
-              Generate QR Code
-            </button>
-          </div>
-          <div className="flexContainer">
-            <button className="d-flex col btn waves-effect waves-light">
-              Get The URL Ref Tag
-            </button>
-            <button className="d-flex col btn waves-effect waves-light">
-              Download QR Image
-            </button>
+            </div>
+
+            <div className="flexContainer">
+              <button className="d-flex col btn waves-effect waves-light">
+                Generate QR Code
+              </button>
+            </div>
+            <div className="flexContainer">
+              <button className="d-flex col btn waves-effect waves-light">
+                Get The URL Ref Tag
+              </button>
+              <button className="d-flex col btn waves-effect waves-light">
+                Download QR Image
+              </button>
+            </div>
           </div>
         </div>
       </div>
-      </div>
-    </div>
+      </>
   );
 }
 

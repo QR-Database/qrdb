@@ -75,7 +75,8 @@ td {
   border-style: solid;
 }
 img {
-  max-width: 40%;
+
+  width: 15%;
 }
 textarea.materialize-textarea {
   font-size: $mainFontSize;
@@ -136,13 +137,30 @@ textarea.materialize-textarea:focus:not([readonly]) + label {
 @media screen and (min-width: 1024px) {
   $largerFontSize: 3vw;
   $mainFontSize: 2vw;
-  $smallerFontSize: 2vw;
+  $smallerFontSize: 1vw;
 
   .btn {
     font-size: $mainFontSize;
   }
   .tabs .tab a {
-  font-size: $largerFontSize;
+  font-size: $mainFontSize;
   }
+  .row .col.s3 {
+    font-size: $mainFontSize;
+  }
+  .s12CreateQR {
+    font-size: $mainFontSize;
+  }
+  img {
+    width: 8%;
+  }
+  .s12CreateQR {
+    margin: 5px;
+    font-size: $mainFontSize;
+  }
+  .input-field {
+    margin-top: 0;
+    margin-bottom: 0;
+}
 }
 //This is where QR code create ends
