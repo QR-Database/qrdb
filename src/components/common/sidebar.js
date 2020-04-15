@@ -13,12 +13,12 @@ function SideBar() {
     });
   });
 
-  function CloseNav(){
+   function CloseNav(){
     let elem = document.querySelector(".sidenav");
     M.Sidenav.init(elem, {
-      edge: "left"
+      edge: "left" 
     });
-  }
+  } 
 
   
 
@@ -32,7 +32,7 @@ function SideBar() {
               <NavLink to="/courses" onClick={CloseNav}>DataBase</NavLink>
             </li>
             <li>
-              <NavLink to="/about" onClick={CloseNav}>About</NavLink>
+              <NavLink to="/dual" onClick={CloseNav}>Create</NavLink>
             </li>
       </ul>
       <a href="#" data-target="slide-out" className="sidenav-trigger">

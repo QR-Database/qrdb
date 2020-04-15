@@ -24,7 +24,7 @@ const Header = () => {
               <NavLink to="/courses">DataBase</NavLink>
             </li>
             <li>
-              <NavLink to="/about">About</NavLink>
+              <NavLink to="/dual">Create</NavLink>
             </li>
           </ul>
         </div>

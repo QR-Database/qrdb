@@ -1,42 +1,166 @@
+@import "./scss/Variables.scss";
+
 #app {
-    max-width: 100%;
-    max-height: 100%;
+  max-width: 100%;
+  max-height: 100%;
+}
+
+a {
+  color: #273043;
+  -webkit-transition: color 0.28s ease, background-color 0.28s ease;
+  transition: color 0.28s ease, background-color 0.28s ease;
+}
+.nav-wrapper {
+  padding-top: 10px;
+  background-color: #273043;
+  padding-bottom: 75px;
+}
+.tabs .tab a:hover,
+.tabs .tab a.active {
+  background-color: transparent;
+  color: #273043;
+}
+nav .brand-logo {
+  font-size: 60px;
+}
+nav i,
+nav,
+nav i.material-icons {
+  display: block;
+  font-size: 60px;
+}
+.sidenav li > a {
+  color: rgba(0, 0, 0, 0.87);
+  display: block;
+  font-size: $mainFontSize;
+  font-weight: 500;
+  height: 48px;
+  line-height: 48px;
+  padding: 32px;
+}
+.sidenav li > a:hover {
+  background-color: white;
+}
+//This is where the nav stops
+
+.row .col {
+  padding: 0;
+}
+td {
+  border-style: solid;
+  border-color: $mainFontSize;
+}
+.col .row {
+  margin-left: 0rem;
+  margin-right: 0rem;
+}
+.row .col.s3 {
+  text-align: center;
+  max-width: 100%;
+  width: 33%;
+  font-size: $mainFontSize;
+  background-color: white;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.s12CreateQR {
+  border-style: solid;
+  border-left: none;
+  border-right: none;
+  text-align: center;
+  max-width: 100%;
+  font-size: $mainFontSize;
+}
+.boarder {
+  border-style: solid;
+}
+img {
+
+  width: 15%;
+}
+textarea.materialize-textarea {
+  font-size: $mainFontSize;
+  max-height: 10px;
+  line-height: normal;
+  overflow-y: hidden;
+  padding: 1.3rem 0 0.8rem 0;
+  resize: none;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.input-field.col label {
+  left: 0.75rem;
+  font-size: 25px;
+}
+.flexContainer {
+  display: flex;
+  justify-content: space-around;
+}
+.btn,
+.btn-large,
+.btn-small {
+  text-decoration: none;
+  color: #fff;
+  background-color: $primaryColor;
+  text-align: center;
+  letter-spacing: 0.5px;
+  -webkit-transition: background-color 0.2s ease-out;
+  transition: background-color 0.2s ease-out;
+  cursor: pointer;
+}
+textarea.materialize-textarea:focus:not([readonly]) + label {
+  color: $primaryColor;
+}
+.tabs .tab a {
+  font-size: $mainFontSize;
+  color: $primaryColor;
+}
+.tabs .indicator {
+  position: absolute;
+  bottom: 0;
+  height: 2px;
+  background-color: $primaryColor;
+  will-change: left, right;
+}
+.tabs .tab a:focus,
+.tabs .tab a:focus.active {
+  background-color: $secondaryColor;
+  outline: none;
+}
+.btn {
+  text-align: center;
+  color: $secondaryColor;
+  font-size: $mainFontSize;
+  margin: $sm;
+  width: 100%;
+}
+@media screen and (min-width: 1024px) {
+  $largerFontSize: 3vw;
+  $mainFontSize: 2vw;
+  $smallerFontSize: 1vw;
+
+  .btn {
+    font-size: $mainFontSize;
   }
-  
-  a{
-    color: #273043;
-    -webkit-transition: color .28s ease, background-color .28s ease;
-    transition: color .28s ease, background-color .28s ease;
+  .tabs .tab a {
+  font-size: $mainFontSize;
   }
-  .nav-wrapper{
-    padding-top: 10px;
-    background-color: #273043;  
-    padding-bottom: 75px;
+  .row .col.s3 {
+    font-size: $mainFontSize;
   }
-  .tabs .tab a:hover, .tabs .tab a.active {
-    background-color: transparent;
-    color: #273043;
+  .s12CreateQR {
+    font-size: $mainFontSize;
   }
-  nav .brand-logo {
-    font-size: 60px;
+  img {
+    width: 8%;
   }
-  nav i, nav, nav i.material-icons {
-    display: block;
-    font-size: 60px;
+  .s12CreateQR {
+    margin: 5px;
+    font-size: $mainFontSize;
   }
-  .sidenav li>a {
-    color: rgba(0,0,0,0.87);
-    display: block;
-    font-size: 40px;
-    font-weight: 500;
-    height: 48px;
-    line-height: 48px;
-    padding: 32px;
-  }
-  .sidenav li>a:hover {
-    background-color: white;
-  }
-  .row .col {
-    padding: 0;
-  }
-  
+  .input-field {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+}
+//This is where QR code create ends
