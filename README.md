@@ -10,21 +10,23 @@
 6. Nothing above work? Delete your node_modules folder and re-run npm install.
 
 ### Production Dependencies
+
 <!-- Note bootstrap will be removed this is a project already pre-built. -->
 
-| **Dependency**   | **Use**                                              |
-| ---------------- | ---------------------------------------------------- |
-| Materializecss     CSS Framework                                        |
-| immer            | Helper for working with immutable data               |
-| prop-types       | Declare types for props passed into React components |
-| react            | React library                                        |
-| react-dom        | React library for DOM rendering                      |
-| react-redux      | Connects React components to Redux                   |
-| react-router-dom | React library for routing                            |
-| react-toastify   | Display messages to the user                         |
-| redux            | Library for unidirectional data flows                |
-| redux-thunk      | Async redux library                                  |
-| reselect         | Memoize selectors for performance                    |
+| **Dependency**    | **Use**                                              |
+| ----------------- | ---------------------------------------------------- |
+| Material-Ui       | CSS Framework                                        |
+| Styled-Components | Helps make componenets using                         |
+| immer             | Helper for working with immutable data               |
+| prop-types        | Declare types for props passed into React components |
+| react             | React library                                        |
+| react-dom         | React library for DOM rendering                      |
+| react-redux       | Connects React components to Redux                   |
+| react-router-dom  | React library for routing                            |
+| react-toastify    | Display messages to the user                         |
+| redux             | Library for unidirectional data flows                |
+| redux-thunk       | Async redux library                                  |
+| reselect          | Memoize selectors for performance                    |
 
 ### Development Dependencies
 
