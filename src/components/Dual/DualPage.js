@@ -1,13 +1,8 @@
-import React, { useEffect } from "react";
-import M from "materialize-css";
+import React from "react";
 
 function DualPage() {
-  useEffect(() => {
-    M.AutoInit();
-  }, []);
-
   return (
-<>
+    <>
       <div className="row">
         <div className="col s12">
           <ul className="tabs">
@@ -123,7 +118,7 @@ function DualPage() {
           </div>
         </div>
       </div>
-      </>
+    </>
   );
 }
 
