@@ -4,6 +4,10 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 In the project directory, you can run:
 
+### `yarn run story book or npm run storybook`
+
+Runs a storybook UI development enviroment and playground for UI componenets.
+
 ### `yarn start`
 
 Runs the app in the development mode.<br />
